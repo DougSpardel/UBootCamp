@@ -1,0 +1,175 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body styles */
+body {
+    background-color: #d9dcd6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Header styles */
+header {
+    padding: 20px;
+    background-color: #2a607c;
+    display: flex; /* Use flexbox for header layout */
+    flex-wrap: wrap; /* Allow content to wrap */
+}
+
+/* Header h1 styles */
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* Header h1 .seo styles */
+header h1 .seo {
+    color: #d9dcd6;
+}
+
+/* Header nav styles */
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right; /* Float the navigation to the right */
+    font-size: 20px;
+}
+
+/* Header nav ul styles */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Header nav ul li styles */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Link styles */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 16px;
+}
+
+/* Background image */
+.background-image {
+    height: 800px;
+    width: 100%;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -1; /* Place it below the content */
+}
+
+/* Float styles */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* Content styles */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Aside styles */
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    background-color: #2589bd;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Benefit styles */
+.benefit-lead,
+.benefit-brand,
+.benefit-cost {
+    margin-bottom: 32px;
+}
+
+/* Benefit h3 styles */
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Benefit img styles */
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* Section styles */
+.search-engine-optimization,
+.online-reputation-management,
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Image styles within sections */
+.search-engine-optimization img,
+.online-reputation-management img,
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+/* Heading styles within sections */
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Footer styles */
+footer {
+    padding: 70px;
+    clear: both;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Footer h2 styles */
+footer h2 {
+    font-size: 20px;
+}
+
+/* Set specific widths for images */
+img {
+    max-width: 100%;
+    width: auto;
+}
+
