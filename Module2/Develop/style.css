@@ -1,0 +1,356 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body styles */
+body {
+    background-color: seashell;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #198381;
+}
+
+header {
+    padding: 20px;
+    background-color: seashell;
+    display: flex;
+    justify-content: space-between; /* Align header content to the start and end */
+    align-items: center; /* Vertically center header content */
+    flex-wrap: wrap; /* Allow content to wrap */
+}
+
+/* Header nav styles */
+header nav {
+    font-size: 20px;
+}
+
+/* Header nav ul styles */
+header nav ul {
+    list-style-type: none;
+    color: seashell;
+    font-size: larger;
+    padding: 0; /* Remove default padding */
+}
+
+/* Header nav ul li styles */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+/* Link styles */
+a {
+    align-content: end;
+    color: #198381;
+    text-decoration: none;
+    text-align: right;
+    
+}
+
+/* Paragraph styles */
+p {
+    font-size: 16px;
+    background-color: seashell;
+    
+}
+
+/* Background image */
+
+
+/* Float styles */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* Content styles */
+.content {
+    width: 100%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+.contact-content {
+    
+    color: #198381;
+     border-width: 20px;
+}
+.contact-content {
+    display: flex;
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 20px; /* Gap between grid items, adjust as needed */
+  }
+/* Vertical line */
+
+.surf-report {
+        grid-column: span 2; /* Span two columns for full-width box */
+        color: #198381;
+        background-image: url('./img/surfreport.webp'); /* Update the path to your image */
+        background-size: cover;
+        padding: 20px; /* Adjust padding as needed */
+        grid-row: span 15;
+        background-position: bottom;
+        border: 3px solid #198381;   
+        position: relative;
+        opacity: 80%;
+    }
+      
+      /* Style for the other boxes (Box 1 to Box 4) */
+/* Common styles for the boxes */
+.led-wall,
+.calculator,
+.pastel-puzzles,
+.run-buddy {
+    background-color: #e0e0e0; /* Background color for boxes */
+    padding: 20px; /* Adjust padding as needed */
+    grid-row: span 5;
+    background-position: left;
+        border: 3px solid #198381;  
+        position: relative;
+        opacity: 80%;
+        
+     
+    
+}
+.led-wall p,
+.calculator p,
+.pastel-puzzles p,
+.run-buddy p,
+.surf-report p {
+    
+    color: #198381;
+        background-color: seashell;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px; /* Add padding to create some space around the text */
+     /* Set the background color */
+    border-radius: 3px; /* Add rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    font-size: larger;
+    font: bolder;
+}
+
+/* Individual styles for each box */
+.led-wall {
+    background-image: url('./img/ledlight.jpeg'); /* Update the path to your image */
+    
+}
+
+.calculator {
+    background-image: url('./img/calculator.jpeg'); /* Update the path to your image */
+    
+}
+
+  .calculator:hover,
+  .led-wall:hover,
+  .pastel-puzzles:hover,
+  .run-buddy:hover,
+  .surf-report:hover {
+    background-color: transparent;
+    content: ""; /* Add content to the ::before pseudo-element */
+    position: relative;
+   
+    width: 100%; /* Expand the width to 100% on hover */
+    height: 100%; /* Expand the height to 100% on hover */
+    background-color: black; /* Change the background color on hover */
+    opacity: 100%;
+}
+
+  
+
+.pastel-puzzles {
+    background-image: url('./img/pastel.jpeg'); /* Update the path to your image */
+}
+
+.run-buddy {
+    background-image: url('./img/run.webp'); /* Update the path to your image */
+}
+.content-container{
+    flex: 1;
+    padding: 20px;
+    font-size: x-large;
+}
+  /* Style for the container */
+.container {
+    
+    display: flex; /* Use flexbox for layout */
+    align-items: left; /* Stretch divs vertically */
+    gap: 20px; /* Gap between divs, adjust as needed */
+  }
+  .contact-info {
+    display: flex;
+    
+  }
+  /* Style for the content-headers (left div) */
+  .content-headers {
+    text-align: right;
+    padding: 15px; /* Adjust padding as needed */
+  }
+  
+  .vertical-line {
+    width: 2px; /* Adjust the width of the line */
+    align-items:flex-start;
+    background-color: #198381;; /* Line color */
+    
+}
+  
+  /* Style for the content-container (right div) */
+  .contact-content {
+    flex: 1; /* Take up equal space */
+    
+    padding: 20px; /* Adjust padding as needed */
+  }  
+    
+   
+/* Aside styles */
+.content-headers {
+    
+    
+    color: #198381;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Benefit styles */
+.benefit-lead,
+.benefit-brand,
+.benefit-cost {
+    margin-bottom: 32px;
+}
+
+/* Benefit h3 styles */
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Benefit img styles */
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* Section styles */
+.article {
+    display: flexbox;
+    margin-bottom: auto; 
+    padding: 50px;
+    height: auto;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Heading styles within sections */
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: black;
+}
+
+/* Footer styles */
+footer {
+    padding: 70px;
+    clear: both;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Footer h2 styles */
+footer h2 {
+    font-size: 20px;
+}
+
+/* Set specific widths for images */
+img {
+    max-width: 100%;
+    width: auto;
+}
+.image-container {
+    width: 100%;
+    height: 200px; /* Set the height as needed */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container::before {
+    content: '';
+    background-image: url('./img/snowybackground.jpeg'); /* Update the path to your image */
+    background-size: 100%; /* Stretch the image to cover the container */
+    background-position: center; /* Center the background image */
+    background-attachment: local; /* Keep the background fixed with the screen */
+    width: 100%; /* Set the width to 100% */
+    height: 100%; /* Set the height to 100% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: seashell;
+    color: black;
+        padding: 10px;
+    font: bolder;
+    font-size: larger;
+
+    
+  }
+.resume-links {
+    display: flex;
+    align-items: center;
+    
+    
+}
+.resume-links nav {
+    display: inline-block;
+    margin-left: 25px;
+    display: flex;
+    
+    text-align: center;
+    
+    
+
+}
+.resume-links nav ul a {
+    flex: 1; /* Equal width for all items */
+    text-align: center; /* Center the text horizontally */
+    
+    padding: 15px; /* Add some spacing between items */
+    border-radius: 10px; /* Add rounded corners to the items */
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition on hover */
+    font-size: x-large;
+    /* Style for the links (customize as needed) */
+    text-decoration: none;
+    color: #198381;
+    font-weight: bold;
+  
+}
+
+.resume-links nav ul a:hover{
+    background-color: skyblue; /* Background color on hover */
+    color: black; /* Text color on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
+    text-decoration: underline;
+  
+}
